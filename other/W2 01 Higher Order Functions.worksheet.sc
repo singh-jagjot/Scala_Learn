@@ -10,8 +10,6 @@ def sum(f: Int => Int, a: Int, b: Int): Int =
     else loop(a + 1, acc + f(a))
   loop(a, 0)
 
-@main
-def main() = {
-  println(old_sum(x => x, 1, 5))
-  println(sum(x => x, 1, 5))
-}
+
+println(old_sum(x => x, 1, 5))
+println(sum(x => x, 1, 5))
