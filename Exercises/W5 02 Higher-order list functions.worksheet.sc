@@ -15,3 +15,13 @@ pack(elems)
 def encode[T](xs: List[T]): List[(T, Int)] = pack(xs).map(x => (x.head, x.length))
 
 encode(elems)
+
+
+def concat[T](xs: List[T], ys: List[T]): List[T] =
+  xs.foldRight(ys)(_ :: _)
+  // xs.foldLeft(ys)(_ :: _)
+
+val a =List(1,2,3,4)
+val b = List(5,6,7,8 )
+
+concat(a, b)
