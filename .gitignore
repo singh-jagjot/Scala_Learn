@@ -64,4 +64,4 @@ logs/
 *.dat
 .bsp
 .scala-build
-
+demo.worksheet.sc
